@@ -3,60 +3,261 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />    
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Allerta"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Abel"
+      rel="stylesheet"
+    />
+    <style>
+      /* Write styles here */
+      body{
+        margin: 0;
+        padding: 0;
+      }
+
+      #navbarMonstera{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        height: 100px;
+      }
+
+      #navFirst{
+        width: 20%;
+      }
+      #navFirst>img{
+        width: 100px;
+        margin-left: 20%;
+      }
+      #navMid{
+        width: 60%;
+        display: flex;
+      }
+
+      #navMid>div{
+        width: 100%;
+        text-align: center;
+      }
+
+
+      #navEnd{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        width: 20%;
+      }
+
+      #navEnd> div{
+        width: 25%;
+        text-align: center;
+      }
+
+      /*----------------------         --------------------*/
+
+      #midWhole{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: stretch;
+      width: 100%;
+      height: calc(100vh - 105px);
+      }
+      #midWholePart1{
+        width: 60%;
+        height: 100%;
+      }
+      #midWholePart11{
+        margin-top: 20%;
+      }
+
+      #midWholePart11>div>ul>li:first-child{
+        font-size: 50px;
+        width: 60%;
+      }
+      #monstera{
+        margin: 0;
+      }
+
+      #midWholePart11>div>ul>li:nth-child(2),#midWholePart11>div>ul>li:nth-child(3),#midWholePart11>div>ul>li:nth-child(4){
+        font-size: 23px;
+        width: 85%;
+      }
+
+      #midWholePart12{
+        width: 60%;
+      }
+
+      #midWholePart121{        
+        display: flex;
+        align-content: center;
+        align-items: center;
+        width: 70%;
+        background-color: #466d50;
+        margin: auto;
+        border-radius: 50px;
+        margin-top: 15%;
+      }
+
+      #midWholePart121>div>h1{
+        text-align: center;
+        color: #fff;
+        margin: 0;
+        padding: 15px;
+        padding-left: 40px;
+      }
+
+      #midWholePart13{
+        display: flex;
+        align-content: center;
+        align-items: center;
+        width: 100%;
+        margin-left: 5%;        
+        margin-top: 15%;
+      }
+
+      
+      .midWholePart13Parts{
+        display: flex;
+        align-items: center;
+        width: 90%;
+      }
+      
+      h4{
+        margin: 0;
+        padding: 0;
+      }
+      .text{
+        text-align: initial;
+        width: 90%;
+        margin: 0;
+        padding: 0;
+      }
+
+      #midWhole > div:nth-child(2){
+        width: 40%;
+        height: 100%;
+      }
+
+      #imgMain{
+        width: 100%;
+        height: 100%;
+      }
+
+      h4:hover{
+        text-decoration: underline;
+      }
+
+</style>
   </head>
   <body>
-    <div class="container">
-      <section aria-label="navbar">
-        <nav class="navbar">
+    <nav id="navbarMonstera">
+      <div id="navFirst">
+        <img src="./photos/Logo.svg" />
+      </div>
+
+      <div id="navMid">
+        <div>
+          <h4>Home</h4>
+        </div>
+        <div><h4>Collection</h4></div>
+        <div>
+          <h4>Shop</h4>
+        </div>
+        <div>
+          <h4>About</h4>
+        </div>
+        <div>
+          <h4>Contact</h4>
+        </div>
+      </div>
+
+      <div id="navEnd">
+        <div>
+          <img src="/photos/cart.svg" />
+        </div>
+        <div>
+          <img src="./photos/user.svg" />
+        </div>
+        <div>
+          <img src="./photos/search.svg" />
+        </div>
+      </div>
+    </nav>
+
+    <div id="midWhole">
+      <div id="midWholePart1">
+        <div id="midWholePart11">
           <div>
-            <img src="./assets/white-logo.png" alt="logo" class="logo" />
-          </div>
-          <div class="line"></div>
-          <div class="grow-list">
-            <ul class="list">
-              <li class="list-item">Apps
-                <div>
-                  <img src="./assets/down_arrow.png" alt="down arrow">
-                </div>
+            <ul>
+              <li><h1 id="monstera">MONSTERA</h1></li>
+              <li></li>
+              <li>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Debitis ab veniam adipisci corrupti unde, nostrum saepe.
               </li>
-              <li class="list-item">DAO</li>
-              <li class="list-item">Technology</li>
-              <li class="list-item">Token</li>
-              <li class="list-item">Contributors</li>
+              <li>
+                Quibusdam perferendis, dolore est odit iste cum quas quidem
+                officiis laudantium hic maxime recusandae?
+              </li>
             </ul>
           </div>
-          <div>
-            <button class="button-small">Buy 1 Token</button>
-          </div>
-        </nav>
-      </section>
-      <!-- Hero Section -->
-      <section aria-label="hero">
-        <div class="hero">
-          <h1 class="hero-heading">Lets build a better tomorrow, together.</h1>
-          <p class="hero-description">
-            Buy 1 Token. Join the DAO. Change the world
-          </p>
-          <div>
-            <button class="button-large">Request Early Access</button>
+        </div>
+        <div id="midWholePart12">
+          <div id="midWholePart121">
+            <div>
+              <h1>DISCOVER</h1>
+            </div>
+            <div id="midWholePart122">
+              <img src="./photos/greaterThan.svg" />
+            </div>
           </div>
         </div>
-      </section>
+        <div id="midWholePart13">
+          <div class="midWholePart13Parts">
+            <div>
+              <img id="feeding" src="./photos/water plant.png" />
+            </div>
+            <div>
+              <h4>Feeding</h4>
+              <p class="text">
+                Lorem ipsum dolor sit amet consecteturadipisicing elit
+              </p>
+            </div>
+          </div>
+          <div class="midWholePart13Parts">
+            <div>
+              <img id="light" src="./photos/light.svg" alt="" />
+            </div>
+            <div>
+              <h4>Light</h4>
+              <p class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit
+              </p>
+            </div>
+          </div>
+          <div class="midWholePart13Parts"> 
+            <div>
+              <img id="care" src="./photos/plough.svg" />
+            </div>
+            <div>
+              <h4>Care</h4>
+              <p class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <img id="imgMain" src="./photos/6_folwer_cut.png" />
+      </div>
     </div>
   </body>
 </html>
